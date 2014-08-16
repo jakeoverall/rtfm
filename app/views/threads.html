@@ -1,0 +1,12 @@
+<div>
+    <h1>Threads</h1>
+    <form name="new-thread-form">
+        <label for="new-thread">New Thread Title:</label>
+        <input id="new-thread" ng-model="newThreadTitle" ng-enter="addThread()" />
+    </form>
+    <div>
+        <p ng-repeat="thread in threads">
+            <a ui-sref="secure.thread({threadId: thread.$id})">{{thread.name}} by ({{thread.username.email}})</a>
+        </p>
+    </div>
+</div>

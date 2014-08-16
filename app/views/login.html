@@ -1,0 +1,23 @@
+<h1>Login</h1>
+
+<form name="loginForm" class="form-horizontal" ng-submit="logMeIn()">
+    
+    <label for="username">Username:</label>
+    <input class="form-control" id="username" ng-model="username" />
+    
+    <label for="password">Password:</label>
+    <input class="form-control" id="password" ng-model="password" />
+
+    <button ng-disabled="loginForm.$invalid" class="btn btn-primary" type="submit">Log In</button>
+</form>
+<hr />
+<h2>Register</h2>
+<form name="registerForm" class="form-horizontal" ng-submit="register()">
+    <label for="registerUsername">Username:</label>
+    <input class="form-control" id="registerUsername" ng-model="registerUsername" />
+
+    <label for="registerUsername">Password:</label>
+    <input class="form-control" id="registerPassword" ng-model="registerPassword" />
+
+    <button ng-disabled="loginForm.$invalid" class="btn btn-primary" type="submit">Register</button>
+</form>

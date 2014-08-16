@@ -1,0 +1,16 @@
+<div ng-controller="ThreadCtrl">
+    <h1>Threads</h1>
+    <p ng-repeat="thread in threads">{{thread}}</p>
+    <div>
+        <label for="new-thread">Thread Title:</label>
+        <input id="new-thread" ng-model="newThreadTitle" ng-enter="addThread()" />
+    </div>
+    <div>
+        <h3>Replies</h3>
+        <p ng-repeat="message in replies">{{message}}</p>
+    </div>
+    <div>
+        <label for="new-reply">Reply:</label>
+        <input id="new-reply" ng-model="newReply" />
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿<div>
+    <h3>Comments for {{thread.name}}</h3>
+</div>
+<div>
+    <label for="comment">Add Comment:</label>
+    <input id="comment" ng-model="comment" ng-enter="addComment()" />
+    <p ng-repeat="comment in comments">
+        <span>Comment: {{comment.comment}}</span>
+        <br />
+        <span> by {{comment.username}} at {{comment.timestamp | date}}</span>
+    </p>
+</div>
